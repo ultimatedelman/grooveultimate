@@ -1,0 +1,25 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Groove
+tagline:          'Herp. Derp.'
+description:      'A San Francisco ultimate team that loves to make sweet, sweet music.'
+url:              http://ultimatedelman.github.io/grooveultimate
+baseurl:          /
+
+author:
+  name:           'Jason Edelman'
+  url:            https://motherfuckin.ninja
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/ultimatedelman/grooveultimate
