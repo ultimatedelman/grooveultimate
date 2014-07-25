@@ -1,6 +1,6 @@
 # Dependencies
 markdown:         redcarpet
-pygments:         true
+highlighter:      true
 
 # Permalinks
 permalink:        pretty
@@ -10,7 +10,7 @@ title:            Groove
 tagline:          'Herp. Derp.'
 description:      'A San Francisco ultimate team that loves to make sweet, sweet music.'
 url:              http://ultimatedelman.github.io/grooveultimate
-baseurl:          http://ultimatedelman.github.io/grooveultimate/
+baseurl:          /
 
 author:
   name:           'Jason Edelman'
