@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Groove is:
+title: Roster
 ---
 
 * Heather "Chuckles" Armstrong
