@@ -1,0 +1,40 @@
+---
+---
+
+.content:after {
+	content: url('{{ site.baseurl }}/assets/watermark.gif');
+	opacity: 0.1;
+	bottom: -240px;
+	right: -234px;
+	position: fixed;
+}
+
+.sidebar-nav-icon {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: sub;
+}
+
+.sidebar-nav-icon svg {
+	display: inline-block;	
+	margin: 0;
+	width: 20px;
+	height: 20px;		
+}
+
+.sidebar-nav-icon .twitter {
+	fill: #FFFFFF;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+.sidebar-nav-icon .twitter:hover {
+	fill: #00aced;
+}
+
+.sidebar-nav-item.external {
+	display: inline-block;	
+}
