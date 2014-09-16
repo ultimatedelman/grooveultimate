@@ -6,7 +6,7 @@ title: Roster
 * Heather "Chuckles" Armstrong
 * Sam Applegate
 * Tyler Adams (pp)
-* Reena Badyal (pp)
+* Reena Badyal
 * Meghan Berry
 * Caner Cooperrider
 * Mickey Cooperrider
@@ -17,6 +17,7 @@ title: Roster
 * Jordan "Fawkes" Gatti
 * Kimmey Hardesty
 * Nikki Johnson
+* Krisztina Jozsef (pp)
 * Adam Koren
 * Ted Li (pp)
 * Bill Liu
