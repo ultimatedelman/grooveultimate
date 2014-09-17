@@ -7,6 +7,32 @@
 	bottom: -240px;
 	right: -234px;
 	position: fixed;
+	z-index: -1;
+}
+
+@media (max-width: 360px) {
+	.content:after {
+		display: none;
+	}
+}
+
+.sidebar-about h1 {
+	max-width: 280px;
+	max-height: 175px;
+	margin: 0 auto 10px
+}
+
+.sidebar-about h1 a {
+	width: 100%;
+	height: 0;
+	margin: 0 auto;
+	display: block;
+	padding-top: 62.5%;
+	background-size: 100%;
+	background-image: url('{{ site.baseurl }}/assets/logo-white.png');
+	background-repeat: no-repeat;
+	text-indent: 120%;
+	overflow: hidden;
 }
 
 .sidebar-nav-icon {
@@ -23,7 +49,7 @@
 	height: 20px;		
 }
 
-.sidebar-nav-icon .twitter {
+.sidebar-nav-icon path {
 	fill: #FFFFFF;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
@@ -31,10 +57,14 @@
 	transition: all 200ms ease;
 }
 
-.sidebar-nav-icon .twitter:hover {
+.sidebar-nav-icon:hover .twitter {
 	fill: #00aced;
 }
 
-.sidebar-nav-item.external {
-	display: inline-block;	
+.sidebar-nav-icon:hover .github {
+	fill: #000000;
+}
+
+.sidebar-nav-icon:hover .email {
+	fill: #c73232;
 }
