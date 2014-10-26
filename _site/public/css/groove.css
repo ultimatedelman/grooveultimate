@@ -1,0 +1,90 @@
+.roster ul {
+	padding: 0;
+}
+
+.roster li {
+	list-style-type: none;
+}
+
+.roster li p {
+	margin: 0;
+}
+
+.roster li b {
+	display: inline-block;
+	width: 30px;
+	margin-right: 20px;
+}
+
+.bio figure {
+	float: right;
+	margin-top: 10px;
+}
+
+.content:after {
+	content: url('/grooveultimate/assets/watermark.gif');
+	opacity: 0.1;
+	bottom: -240px;
+	right: -234px;
+	position: fixed;
+	z-index: -1;
+}
+
+@media (max-width: 360px) {
+	.content:after {
+		display: none;
+	}
+}
+
+.sidebar-about h1 {
+	max-width: 280px;
+	max-height: 175px;
+	margin: 0 auto 10px
+}
+
+.sidebar-about h1 a {
+	width: 100%;
+	height: 0;
+	margin: 0 auto;
+	display: block;
+	padding-top: 62.5%; /* http://stackoverflow.com/questions/16721583/css-fluid-image-replacement */
+	background-size: 100%;
+	background-image: url('/grooveultimate/assets/logo-white.png');
+	background-repeat: no-repeat;
+	text-indent: 120%;
+	overflow: hidden;
+}
+
+.sidebar-nav-icon {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: sub;
+}
+
+.sidebar-nav-icon svg {
+	display: inline-block;	
+	margin: 0;
+	width: 20px;
+	height: 20px;		
+}
+
+.sidebar-nav-icon path {
+	fill: #FFFFFF;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+.sidebar-nav-icon:hover .twitter {
+	fill: #00aced;
+}
+
+.sidebar-nav-icon:hover .github {
+	fill: #000000;
+}
+
+.sidebar-nav-icon:hover .email {
+	fill: #c73232;
+}
