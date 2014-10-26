@@ -3,6 +3,23 @@ layout: default
 ---
 
 <div class="bio">
-  <h1 class="bio-title">{{ bio.title }}</h1>
-  {{ content }}
+	<h1 class="bio-title">{{ page.title }}</h1>
+	{% if page.player.pic %}
+	<figure>
+		<img src="{{site.baseurl}}/assets/biopics/{{page.player.pic}}" alt="Bio pic" title="{{page.player.name}}">
+	</figure>
+	{% endif %}
+  	{% if page.player.bio %}
+  	<p>{{ page.player.bio }}</p>
+	{% else %}
+	<p>Waiting on {% if page.player.sex == "m" %}his{% else %}her{% endif %} buddy to write something clever...</p>
+	{% endif %}
+
+	{% if page.player.facts %}
+	<ul>
+	{% for fact in page.player.facts %}
+		<li>{{fact}}</li>
+	{% endfor %}
+	</ul>
+{% endif %}
 </div>
