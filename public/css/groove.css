@@ -1,6 +1,24 @@
 ---
 ---
 
+.roster ul {
+	padding: 0;
+}
+
+.roster li {
+	list-style-type: none;
+}
+
+.roster li p {
+	margin: 0;
+}
+
+.roster li b {
+	display: inline-block;
+	width: 30px;
+	margin-right: 20px;
+}
+
 .content:after {
 	content: url('{{ site.baseurl }}/assets/watermark.gif');
 	opacity: 0.1;
@@ -27,7 +45,7 @@
 	height: 0;
 	margin: 0 auto;
 	display: block;
-	padding-top: 62.5%;
+	padding-top: 62.5%; /* http://stackoverflow.com/questions/16721583/css-fluid-image-replacement */
 	background-size: 100%;
 	background-image: url('{{ site.baseurl }}/assets/logo-white.png');
 	background-repeat: no-repeat;
