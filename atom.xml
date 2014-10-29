@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Groove</title>
+ <link href="http://ultimatedelman.github.io/grooveultimate/atom.xml" rel="self"/>
+ <link href="http://ultimatedelman.github.io/grooveultimate/"/>
+ <updated>2014-10-29T00:10:51-07:00</updated>
+ <id>http://ultimatedelman.github.io/grooveultimate</id>
+ <author>
+   <name>Jason Edelman</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>New Website!</title>
+   <link href="http://ultimatedelman.github.io/grooveultimate/2014/07/24/new-website/"/>
+   <updated>2014-07-24T17:00:00-07:00</updated>
+   <id>http://ultimatedelman.github.io/grooveultimate/2014/07/24/new-website</id>
+   <content type="html">&lt;p&gt;Groove Ultimate now has a web presence. &lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
