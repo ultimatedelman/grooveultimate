@@ -70,6 +70,7 @@ To add a new player to the roster:
   2. Make sure the image is no wider than `200px` and not absurdly tall, and has a `.jpg` file extension.
   3. Drop the image in the `assets/biopics` folder with the naming convention of `firstname-lastname.jpg` as listed in the `name` property in their data file, for instance, `sam-applegate.jpg`. If she were to change her name to how she used to refer to herself when she was a child, you'd change the `name` property to `Widdle Samamfa Applegate` and subsequently the picture to `widdle-samamfa-applegate.jpg`.
   4. Don't forget to add and commit the image to the `master` branch of the repository.
+5. After you're done adding or updating data, you must run `jekyll build` to regenerate the site.
 
 Here Be Dragons
 ======================
