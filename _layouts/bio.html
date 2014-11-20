@@ -10,7 +10,7 @@ layout: default
 	</figure>
 	{% endif %}
   	{% if page.player.bio %}
-  	<p>{{ page.player.bio }}</p>
+  	{{ page.player.bio | markdownify}}
 	{% else %}
 	<p>Waiting on {% if page.player.sex == "m" %}his{% else %}her{% endif %} buddy to write something clever...</p>
 	{% endif %}
