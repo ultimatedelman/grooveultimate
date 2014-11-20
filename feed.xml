@@ -3,16 +3,16 @@
   <channel>
     <title>Groove</title>
     <description>A San Francisco ultimate team that loves to make sweet, sweet music.</description>
-    <link>http://ultimatedelman.github.io/grooveultimate/grooveultimate/</link>
-    <atom:link href="http://ultimatedelman.github.io/grooveultimate/grooveultimate/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://ultimatedelman.github.io/grooveultimate/</link>
+    <atom:link href="http://ultimatedelman.github.io/grooveultimate/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>New Website!</title>
         <description>&lt;p&gt;Groove Ultimate now has a web presence. &lt;/p&gt;
 </description>
         <pubDate>Thu, 24 Jul 2014 17:00:00 -0700</pubDate>
-        <link>http://ultimatedelman.github.io/grooveultimate/grooveultimate/2014/07/24/new-website/</link>
-        <guid isPermaLink="true">http://ultimatedelman.github.io/grooveultimate/grooveultimate/2014/07/24/new-website/</guid>
+        <link>http://ultimatedelman.github.io/grooveultimate/2014/07/24/new-website/</link>
+        <guid isPermaLink="true">http://ultimatedelman.github.io/grooveultimate/2014/07/24/new-website/</guid>
       </item>
     
   </channel>
