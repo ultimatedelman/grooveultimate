@@ -1,6 +1,3 @@
----
----
-
 .roster ul {
 	padding: 0;
 }
@@ -25,7 +22,7 @@
 }
 
 .content:after {
-	content: url('{{ site.baseurl }}/assets/watermark.gif');
+	content: url('/grooveultimate/assets/watermark.gif');
 	opacity: 0.1;
 	bottom: -240px;
 	right: -234px;
@@ -52,7 +49,7 @@
 	display: block;
 	padding-top: 62.5%; /* http://stackoverflow.com/questions/16721583/css-fluid-image-replacement */
 	background-size: 100%;
-	background-image: url('{{ site.baseurl }}/assets/logo-white.png');
+	background-image: url('/grooveultimate/assets/logo-white.png');
 	background-repeat: no-repeat;
 	text-indent: 120%;
 	overflow: hidden;
