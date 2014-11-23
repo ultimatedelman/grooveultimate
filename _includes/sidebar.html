@@ -19,9 +19,13 @@
       {% for node in pages_list %}
         {% if node.title != null %}
           {% if node.layout == "page" %}
-            <li class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">
+            {% if page.url == node.url %} 
+            <li class="sidebar-nav-item active">{{ node.title}}</li>
+            {% else %}
+            <li class="sidebar-nav-item">
               <a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
             </li>
+            {% endif %}
           {% endif %}
         {% endif %}
       {% endfor %}
