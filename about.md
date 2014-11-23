@@ -1,7 +1,11 @@
 ---
 layout: page
-title: About
+title: About Groove
 ---
+
+<img src="{{site.baseurl}}/assets/team-2014.jpg" alt="Team Photo" title="Grorv 2014">
+
+<h2>Right there, right there, let the Groove get in.</h2>
 
 Groove is a competitive mixed ultimate team based in the [Bay Area](http://bayareadisc.org/). After a few seasons as GrasSFace and one as FunK before that, we made the transition to Groove in 2013, emerging stronger and funkier than ever.
  
