@@ -24,11 +24,25 @@ If everything checks out, I'll merge your changes and build the site.
 1. This is a statically-generated site a la [Jekyll](http://jekyllrb.com/). If you haven't installed that, do that first.
 2. Do step one for simple changes if you haven't already.
 3. Set up [your server](http://jekyllrb.com/), run `jekyll serve` in your terminal/console.
-4. To view changes locally, open the `_config.yml` file and update `baseurl` to read `baseurl: /grooveultimate`. **IT IS IMPERATIVE YOU CHANGE THIS BACK TO `baseurl: ""` AFTER YOU'RE DONE VIEWING LOCAL CHANGES AND REBUILDING**
 5. Make your changes.
 6. In your terminal/console, run `jekyll build`. You should be able to view your changes locally.
 7. Repeat previous two steps until you've achieved the desired result.
 8. Submit a [pull request](https://github.com/ultimatedelman/grooveultimate/compare).
+
+Modifying CSS
+=======================
+
+This site uses the pre-compiler [Compass](http://www.compass-style.org) (SASS/SCSS) to compile its CSS. If you want to modify CSS, do the following: 
+
+0. If you don't have Compass installed, you must run `gem install compass` from your terminal/console. Also run `gem install uglifier` and `gem install smusher`.
+1. Navigate your terminal/console to `/_frontend` and run `compass watch`. Make sure there are no errors. It should say something like `Compass is polling for changes` if you did it right.
+1. The source files for the CSS are the `.scss` files found in the `_frontend/src/partials` folder. Modifying the `.css` file in the `public/css` file is pointless as it is overwritten every time a change is made.
+2. After you make your change and save your file, you should see your terminal automatically compile your changes. Depending on what you're modifying, it's possible that you could generate compilation errors if you save things in the wrong order. For instance, if you create a variable in one file and use it in another, but save them in backwards order, it may cause an error. Just add a space to any file and save it to trigger a recompilation.
+
+Modifying JS
+=====================
+
+No JS yet. Will update when necessary. Similar to above instructions; Compass minifies all JS on save.
 
 Creating a New Post
 =======================
