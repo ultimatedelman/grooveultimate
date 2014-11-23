@@ -1,0 +1,83 @@
+/* No `:visited` state is required by default (browsers will use `a`) */
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover, &:focus {
+    /* `:focus` is linked to `:hover` for basic accessibility */
+    text-decoration: underline;
+  }
+  strong {
+    color: inherit;
+  }
+}
+
+#{headings()} {
+  margin-bottom: $header-margin;
+  font-weight: bold;
+  line-height: $header-line-height;
+  color: $header-color;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: $font-size * 2;
+}
+h2 {
+  margin-top: $header-margin * 2;
+  font-size: $font-size * 1.5;
+}
+h3 {
+  margin-top: $header-margin * 3;
+  font-size: $font-size * 1.25;
+}
+h4, h5, h6 {
+  margin-top: $header-margin * 2;
+  font-size: $font-size;
+}
+
+/* Body text */
+p {
+  margin-top: 0;
+  margin-bottom: $font-size;
+}
+
+strong {
+  color: $strong-color;
+}
+
+// abbr {
+//   font-size: 85%;
+//   font-weight: bold;
+//   color: #555;
+//   text-transform: uppercase;
+// }
+// abbr[title] {
+//   cursor: help;
+//   border-bottom: 1px dotted #e5e5e5;
+// }
+
+/* Quotes */
+blockquote {
+  padding: ($font-size / 2) $font-size;
+  margin: ($font-size * 0.8) 0;
+  color: lighten($font-color, 16%);
+  border-left: ($font-size * 0.25) solid $border-color;
+  p:last-child {
+    margin-bottom: 0;
+  }
+  @include mq(30em) {
+    padding-right: 5rem;
+    padding-left: 1.25rem;
+  }
+} 
+
+/*
+ * Custom type
+ *
+ * Extend paragraphs with `.lead` for larger introductory text.
+ */
+
+.lead {
+  font-size: ($font-size * 1.25);
+  font-weight: 300;
+}

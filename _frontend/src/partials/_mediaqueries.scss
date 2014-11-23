@@ -1,0 +1,6 @@
+@mixin mq($size, $prop: min-width) {
+    //min-width is default property
+    @media (#{$prop}: #{$size}) {
+        @content;
+    }
+}

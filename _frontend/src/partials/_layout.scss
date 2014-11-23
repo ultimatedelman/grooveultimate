@@ -1,0 +1,363 @@
+* {
+  @include box-sizing(border-box); 
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $font-family;
+  line-height: $font-line-height;
+  @include mq(48em) {
+    font-size: $font-size-base;
+  }
+  @include mq(58em) {
+    font-size: 20px;
+  }
+}
+
+body {
+  color: $font-color;
+  background-color: $bg-color;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+/* Lists */
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-bottom: .5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 $font-size;
+  border-radius: $corner-radius;
+}
+
+/* Tables */
+table {
+  margin-bottom: $font-size;
+  width: 100%;
+  border: 1px solid $border-color;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: ($font-size * .25) ($font-size * .5);
+  border: 1px solid $border-color;
+}
+
+tbody {
+  tr {
+    &:nth-child(odd) {
+      td, th {
+        background-color: $bg-table-cell-color;        
+      }
+    }
+  }
+}
+
+/*
+ * Messages
+ *
+ * Show alert messages to users. You may add it to single elements like a `<p>`,
+ * or to a parent if there are multiple elements to show.
+ */
+
+.message {
+  margin-bottom: $font-size;
+  padding: $font-size;
+  color: #717171;
+  background-color: $bg-message-color;
+}
+
+
+/*
+ * Container
+ *
+ * Center the page content.
+ */
+
+.container {
+  max-width: $main-width;
+  padding-left:  $font-size;
+  padding-right: $font-size;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+/* Content
+ *
+ * Align the contents of the site above the proper threshold with some margin-fu
+ * with a 25%-wide `.sidebar`.
+ */
+
+.content {
+  padding-top:    $content-spacing;
+  padding-bottom: $content-spacing;
+  &:after {
+    content: image-url('watermark.gif');
+    opacity: 0.1;
+    bottom: -240px;
+    right: -234px;
+    position: fixed;
+    z-index: -1;
+    @include mq($prop: max-width, $size: 360px) {
+      display: none;
+    }
+  }
+  @include mq(48em) {
+    max-width: ($font-size * 38);
+    margin-left: ($content-spacing * 5);
+    margin-right: ($content-spacing / 2);    
+  }
+  @include mq(64em) {
+    margin-left: 22rem;
+    margin-right: $content-spacing;    
+  }
+}
+
+/*
+ * Sidebar
+ *
+ * Flexible banner for housing site name, intro, and "footer" content. Starts
+ * out above content in mobile and later moves to the side with wider viewports.
+ */
+
+.sidebar {
+  text-align: center;
+  padding: $sidebar-padding;
+  color: rgba(255,255,255,.5);
+  background-color: $bg-sidebar-color;
+  @include mq(48em) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: ($font-size * 18);
+    text-align: left;    
+  }
+  a {
+    color: $sidebar-link-color;
+  }
+  @include mq(48em) {
+    .container {
+      position: absolute;
+      right:  $font-size;
+      bottom: $font-size;
+      left:   $font-size;
+    }
+  }
+}
+
+/* About section */
+.sidebar-about {
+  h1 {
+    color: $sidebar-header-color;
+    margin: 0 auto 10px;
+    font-family: $sidebar-header-font-family;
+    font-size: $sidebar-header-font-size;
+    max-width: $sidebar-max-width;
+    max-height: $sidebar-max-height;
+    a {
+      width: 100%;
+      height: 0;
+      margin: 0 auto;
+      display: block;
+      padding-top: 62.5%; /* http://stackoverflow.com/questions/16721583/css-fluid-image-replacement */
+      background-size: 100%;
+      background-image: image-url('logo-white.png');
+      background-repeat: no-repeat;
+      text-indent: 120%;
+      overflow: hidden;
+    }
+  }
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+  margin-bottom: $font-size;
+}
+.sidebar-nav-item {
+  display: block;
+  a {
+    &:hover, &:focus {
+      text-decoration: underline;    
+    }    
+  }
+}
+.sidebar-nav-item.active a {
+  font-weight: bold;
+}
+
+.sidebar-nav-icon {
+  width: $sidebar-icon-dim;
+  height: $sidebar-icon-dim;
+  display: inline-block;
+  vertical-align: sub;
+  svg {
+    display: inline-block;  
+    margin: 0;
+    width: $sidebar-icon-dim;
+    height: $sidebar-icon-dim;    
+  }
+  path {
+    fill: $white;    
+    @include transition(all 200ms ease);    
+  }
+  &:hover {
+    .twitter {
+      fill: $twitter-blue;
+    }
+    .github {
+      fill: $black;
+    }
+    .email {
+      fill: $contact-icon-color;
+    }
+  }
+}
+
+/*
+ * Posts and pages
+ *
+ * Each post is wrapped in `.post` and is used on default and post layouts. Each
+ * page is wrapped in `.page` and is only used on the page layout.
+ */
+
+.page,
+.post {
+  margin-bottom: $post-margin-bottom;
+}
+
+/* Blog post or page title */
+.page-title,
+.post-title,
+.post-title a {
+  color: #303030;
+}
+.page-title,
+.post-title {
+  margin-top: 0;
+}
+
+/* Meta data line below post title */
+.post-date {
+  display: block;
+  margin-top: ($font-size * -.5);
+  margin-bottom: $font-size;
+  color: #9a9a9a;
+}
+
+/* Related posts */
+.related {
+  padding-top: $related-padding;
+  padding-bottom: $related-padding;
+  border-top: 1px solid #eee;
+}
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+  h3 {
+    margin-top: 0;    
+  }
+  li {
+    small {
+      font-size: 75%;
+      color: #999;      
+    }
+    a {
+      &:hover {
+        color: $link-color;
+        text-decoration: none;        
+        small {
+          color: inherit;          
+        }
+      }
+    }
+  }
+}
+
+/*
+ * Pagination
+ *
+ * Super lightweight (HTML-wise) blog pagination. `span`s are provided for when
+ * there are no more previous or next posts to show.
+ */
+
+.pagination {
+  overflow: hidden; /* clearfix */
+  margin-left: $pagination-margin;
+  margin-right: $pagination-margin;
+  color: $gray;
+  text-align: center;
+  @include mq(30em) {
+    margin: 3rem 0;    
+  }
+}
+
+/* Pagination items can be `span`s or `a`s */
+.pagination-item {
+  display: block;
+  padding: $font-size;
+  border: 1px solid #eee;
+  @include mq(30em) {
+    float: left;
+    width: 50%;
+    &:last-child {
+      margin-left: -1px;
+      border-top-right-radius:    $pagination-corner-radius;
+      border-bottom-right-radius: $pagination-corner-radius;
+    }
+  }
+  &:first-child {
+    margin-bottom: -1px;    
+    @include mq(30em) {
+      margin-bottom: 0;
+      border-top-left-radius:    $pagination-corner-radius;
+      border-bottom-left-radius: $pagination-corner-radius;    
+    }
+  }
+}
+
+/* Only provide a hover state for linked pagination items */
+a.pagination-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* Roster styles */
+
+.roster ul {
+  ul {
+    padding: 0;    
+  }
+  li {
+    list-style-type: none;
+    p {
+      margin: 0;      
+    }    
+    b {
+      display: inline-block;
+      width: $number-width;
+      margin-right: $number-spacing;      
+    }
+  }
+}
+
+/* Bio styles */
+.bio figure {
+  float: right;
+  margin-top: 10px;
+}

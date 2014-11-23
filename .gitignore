@@ -14,6 +14,7 @@ _site
 *.zip
 *.vi
 *~
+*.scssc
 
 # OS or Editor folders
 .DS_Store
@@ -40,3 +41,4 @@ validation-report.json
 # Folders to ignore
 node_modules
 /_site
+/_frontend/.sass-cache

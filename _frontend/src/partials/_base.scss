@@ -1,0 +1,60 @@
+//colors
+//basic
+$black: #000;
+$readblack: #515151;
+$white: #fff;
+$gray: #ccc;
+$grey: $gray; //spelling is dumb
+
+//custom
+$green: #008067;
+$lt-gray: #e5e5e5;
+$offwhite: #f9f9f9;
+$twitter-blue: #00aced;
+$red: #c73232;
+
+//variables
+$bg-color: $white;
+$bg-message-color: $offwhite;
+$bg-table-cell-color: $offwhite;
+$bg-sidebar-color: $green;
+$border-color: $lt-gray;
+$contact-icon-color: $red;
+
+$font-family: "PT Sans", Helvetica, Arial, sans-serif;
+$font-color: $readblack;
+$font-size-base: 16px;
+$font-size: 1rem; //alias for $font-size-base, make measurements dynamic
+$font-line-height: 1.5;
+
+$link-color: $green;
+
+$header-color: darken($font-color, 12%);
+$header-margin: ($font-size / 2);
+$header-line-height: ($font-line-height - 0.25);
+
+$strong-color: darken($font-color, 13%);
+
+$corner-radius: 5px;
+
+$sidebar-link-color: $white;
+$sidebar-header-color: $white;
+$sidebar-header-font-family: "Abril Fatface", serif;
+$sidebar-header-font-size: ($font-size * 3.25);
+$sidebar-max-width: 280px;
+$sidebar-max-height: 175px;
+$sidebar-icon-dim: 20px;
+
+//layout
+$main-width: ($font-size * 38);
+$content-spacing: ($font-size * 4);
+$sidebar-padding: ($font-size * 2) $font-size;
+
+$post-margin-bottom: 4em;
+$related-padding: ($font-size * 2);
+$pagination-margin: ($font-size * -1);
+$pagination-corner-radius: $corner-radius - 1px;
+
+//roster
+$number-width: ($font-size * 2);
+$number-spacing: $font-size;
