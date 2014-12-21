@@ -368,5 +368,12 @@ a.pagination-item:hover {
 /* Bio styles */
 .bio figure {
   float: right;
-  margin-top: 10px;
+  margin: 10px 0 0 10px;
+  @include mq(360px, max-width) {
+    float: none;
+    margin: 10px;
+    img {
+      margin: 0 auto;
+    }
+  }
 }
