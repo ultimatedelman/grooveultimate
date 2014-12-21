@@ -1,17 +1,30 @@
 Groove Ultimate
 ==============
 
-Herp. Derp.
+Herp. Derp. http://grooveultimate.com.
 
 So you'd like to contribute?
 ===========================
 
 That's rad. If you know how GitHub works and how to code, see instructions below. If you don't know how to code and/or have no idea how GitHub works, submit any copy changes/ideas/suggestions/what-have-you to groovecaptains@gmail.com.
 
+Have an idea or found a bug?
+-----------------------------
+
+[Submit an issue](https://github.com/ultimatedelman/grooveultimate/issues)! It's easy as 1, 2, 3, 4, 5:
+
+1. If you're on the website, click on the link that takes you here (the little cat-looking thing next to the Twitter and email icons in the sidebar). If you're already here...
+2. On the right-hand side of this page, click the ["Issues"](https://github.com/ultimatedelman/grooveultimate/issues) link under the "Code" link.
+3. Do a quick check to make sure what you're about to suggest or report hasn't already been suggested or reported. If it has, comment on the existing issue. Saying that you're having the same problem (or think the same idea is awesome!) is valuable info.
+3. Click the big green button that says "New Issue".
+4. Describe idea and submit!
+
+Doing this keeps everything centrally located and easy to find and discuss without polluting anyone's email.
+
 Directions for the coding-inclined
 ================================== 
 
-For **simple** copy or CSS changes, do the following:
+For **simple** copy or HTML changes, do the following:
 
 1. Create a fork of the `master` branch of this repo. This is where all the source files live.
 2. Make your changes. [Want to create a new post?](#creating-a-new-post).
