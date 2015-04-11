@@ -5,11 +5,11 @@ title: 2015 Calendar
 bodyClass: calendar
 ---
 
-{% for event in site.data.events %}
-	{% if event.year == page.year %}
-* <h3><b>{{event.month}} {{event.dates}}</b> {{event.title}}</h3>
+{% assign events = site.data.events | where: "year", page.year |  reverse %}
+{% for event in events %}
+<h3> {{event.title}}</h3>
+
+ **{{event.month}} {{event.dates}}, {%if event.time %}{{event.time}}{% else %}TBD{% endif %}** | {%if event.location %}{%if event.address%}[{{event.location}}]({{event.address}}){% else %}{{event.location}}{% endif %}{% else %}Location TBD{% endif %}
+
 {%if event.description %}{{event.description}}{% endif %}
-Time: {%if event.time %}{{event.time}}{% else %}TBD{% endif %}</br>
-Location: {%if event.location %}{{event.location}} {%if event.address%} ([map]({{event.address}})) {% endif %}{% else %}TBD{% endif %}
-    {% endif %}
 {% endfor %}
