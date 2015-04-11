@@ -1,9 +1,22 @@
-# most recent events at the top for easy entry
+# reverse chronological order, oldest towards the bottom, newest/future to the top
+
+- title:      Colorado Cup
+  year:       2015
+  month:      August
+  dates:      1-2
+  location:   Aurora, CO
+
+- title:      San Francisco Revolution
+  year:       2015
+  month:      July
+  dates:      18-19
+  location:   Davis, CA
 
 - title:      Closed Tryout
   year:         2015
   month:        April
   dates:        25
+  time:        TBD
   description:  This tryout will be invite-only.
 
 - title:      Open Tryout
