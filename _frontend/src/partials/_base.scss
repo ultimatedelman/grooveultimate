@@ -10,7 +10,8 @@ $grey: $gray; //spelling is dumb
 $green: #008067;
 $lt-gray: #e5e5e5;
 $offwhite: #f9f9f9;
-$twitter-blue: #00aced;
+$twitter-color: #00aced;
+$facebook-color: #3a5795;
 $red: #c73232;
 
 //variables
@@ -51,6 +52,7 @@ $content-spacing: ($font-size * 4);
 $sidebar-padding: ($font-size * 2) $font-size;
 
 $post-margin-bottom: 4em;
+$post-list-margin: 20px;
 $related-padding: ($font-size * 2);
 $pagination-margin: ($font-size * -1);
 $pagination-corner-radius: $corner-radius - 1px;
